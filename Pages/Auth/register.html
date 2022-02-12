@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/tailwind/tailwind-dist.css" />
-    <title>صفحه ورود به پنل</title>
+    <title>صفحه ثبت نام در پنل</title>
   </head>
 
   <body class="flex min-h-screen flex-col">
@@ -80,20 +80,25 @@
           <h2 class="text-center text-20 font-bold">ورود به پنل</h2>
           <span class="block py-2 text-center text-14 text-gray-350"> برای استفاده از خدمات باید وارد شوید </span>
           <!----- start email or number input ----->
+          <input class="mt-4 w-full overflow-hidden rounded-sm border border-solid border-transparent bg-gray-100 px-3 py-4 text-12 text-gray-250 outline-none focus:border-river-default focus:ring-0" type="text" placeholder="نام و نام خانوادگی" />
+
           <input class="mt-4 w-full overflow-hidden rounded-sm border border-solid border-transparent bg-gray-100 px-3 py-4 text-12 text-gray-250 outline-none focus:border-river-default focus:ring-0" type="text" placeholder="نام کاربری" />
+          
+          <input class="mt-4 w-full overflow-hidden rounded-sm border border-solid border-transparent bg-gray-100 px-3 py-4 text-12 text-gray-250 outline-none focus:border-river-default focus:ring-0" type="text" placeholder="ایمیل" />
+          <span class="text-12 text-red-500">نام کاربری تکراری می‌باشد</span>
 
           <input class="mt-4 w-full overflow-hidden rounded-sm border border-solid border-transparent bg-gray-100 px-3 py-4 text-12 text-gray-250 outline-none focus:border-river-default focus:ring-0" type="password" placeholder="رمزعبور" />
+
+          <input class="mt-4 w-full overflow-hidden rounded-sm border border-solid border-transparent bg-gray-100 px-3 py-4 text-12 text-gray-250 outline-none focus:border-river-default focus:ring-0" type="password" placeholder="تکرار رمزعبور" />
           <!----- end email or number input ----->
           <!----- start next step button ----->
-          <button class="mt-4 w-full overflow-hidden rounded-sm bg-river-default py-2 text-white opacity-90 hover:opacity-100">ورود</button>
+          <button class="mt-4 w-full overflow-hidden rounded-sm bg-river-default py-2 text-white opacity-90 hover:opacity-100">ثبت‌نام</button>
           <!----- end next step button ----->
         </form>
         <!----- end form ----->
         <div class="mt-8 border-t border-solid py-8">
-          <h2 class="text-center text-20 font-bold">ثبت نام در پنل</h2>
-          <span class="mb-4 block py-2 text-center text-14"> برای ثبت نام کلیک کنید </span>
           <!----- start sign up button ----->
-          <button class="my-2 w-full overflow-hidden rounded-sm border border-solid border-river-default py-2 text-river-default opacity-90 hover:bg-river-default hover:text-white">ثبت نام در پنل</button>
+          <button class="my-2 w-full overflow-hidden rounded-sm border border-solid border-river-default py-2 text-river-default opacity-90 hover:bg-river-default hover:text-white">ورود به پنل</button>
           <!----- end sign up button ----->
         </div>
       </div>
