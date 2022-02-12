@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.card {
+  @apply relative z-0;
+}
+.card::after,
+.card::before {
+  content: "";
+  width: 25%;
+  padding-top: 25%;
+  background-image: url("/assets/images/bitmap.svg");
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+}
+.card::before {
+  right: 0;
+  top: 0;
+}
+.card::after {
+  left: 0;
+  bottom: 0;
+  transform: rotate(180deg);
+}
