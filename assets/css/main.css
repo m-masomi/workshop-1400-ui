@@ -9,8 +9,8 @@
 .card::after,
 .card::before {
   content: "";
-  width: 25%;
-  padding-top: 25%;
+  width: 6rem;
+  padding-top: 6rem;
   background-image: url("/assets/images/bitmap.svg");
   background-size: cover;
   position: absolute;
@@ -24,4 +24,8 @@
   left: 0;
   bottom: 0;
   transform: rotate(180deg);
+}
+
+.ltr{
+    direction: ltr;
 }
